@@ -94,6 +94,8 @@ var BannerVars = []string{
 	"TARGET_CPU_VARIANT",
 	"BUILD_ID",
 	"PRODUCT_SOONG_NAMESPACES",
+	"RECOVERY_VARIANT",
+	"WITH_GMS",
 }
 
 func Banner(make_vars map[string]string) string {
