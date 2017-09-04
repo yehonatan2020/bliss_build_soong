@@ -97,8 +97,8 @@ type variableProperties struct {
 			Enabled *bool
 		}
 
-		// include Lineage variables
-		*android.Product_variables
+		// include bliss variables
+		Bliss android.Product_variables
 	} `android:"arch_variant"`
 }
 
@@ -175,7 +175,7 @@ type productVariables struct {
 	DeviceKernelHeaders []string `json:",omitempty"`
 
 	// include Bliss variables
-	*android.ProductVariables
+	Bliss android.ProductVariables
 }
 
 func boolPtr(v bool) *bool {
