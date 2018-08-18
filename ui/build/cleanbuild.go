@@ -115,6 +115,7 @@ func installClean(ctx Context, config Config, what int) {
 		productOut("product_services"),
 		productOut("oem"),
 		productOut("obj/FAKE"),
+		productOut("obj/KERNEL_OBJ"),
 		productOut("breakpad"),
 		productOut("cache"),
 		productOut("coverage"),
