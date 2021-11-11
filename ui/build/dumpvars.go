@@ -137,19 +137,21 @@ func dumpMakeVars(ctx Context, config Config, goals, vars []string, write_soong_
 
 // Variables to print out in the top banner
 var BannerVars = []string{
-	"BLISS_VERSION",
-	"BLISS_BUILD_VARIANT",
-	"TARGET_PRODUCT",
-	"TARGET_BUILD_VARIANT",
-	"TARGET_BUILD_UNBUNDLED",
-	"TARGET_ARCH",
-	"TARGET_ARCH_VARIANT",
-	"TARGET_CPU_VARIANT",
-	"BUILD_ID",
-	"OUT_DIR",
-	"PRODUCT_SOONG_NAMESPACES",
-	"SOONG_SDK_SNAPSHOT_PREFER",
-	"SOONG_SDK_SNAPSHOT_VERSION",
+    "BLISS_CODENAME",
+    "BLISS_VERSION",
+    "BLISS_DEVICE",
+    "BLISS_BUILDTYPE",
+    "BLISS_BUILD_VARIANT",
+    "TARGET_BUILD_VARIANT",
+    "TARGET_BUILD_UNBUNDLED",
+    "TARGET_ARCH",
+    "TARGET_ARCH_VARIANT",
+    "TARGET_CPU_VARIANT",
+    "BUILD_ID",
+    "OUT_DIR",
+    "PRODUCT_SOONG_NAMESPACES",
+    "SOONG_SDK_SNAPSHOT_PREFER",
+    "SOONG_SDK_SNAPSHOT_VERSION",
 }
 
 func Banner(make_vars map[string]string) string {
