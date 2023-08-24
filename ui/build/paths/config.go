@@ -112,6 +112,7 @@ var Configuration = map[string]PathConfig{
     "python3.8": Allowed,
     "python3.9": Allowed,
 	"python3.10": Allowed,
+    "realpath": Allowed,
     "resize2fs": Allowed,
 	"rsync":   Allowed,
     "repo":    Allowed,
