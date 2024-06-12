@@ -149,7 +149,7 @@ func Main(stdout, stderr io.Writer, interposer string, args []string, opts mainO
 			defer func() { <-waitForLog }()
 		}
 		if config.Error && !opts.disableError {
-			return 1, fmt.Errorf("%q is not allowed to be used. See https://android.googlesource.com/platform/build/+/master/Changes.md#PATH_Tools for more information.", base)
+			return 1, fmt.Errorf("%q is not allowed to be used. See https://android.googlesource.com/platform/build/+/main/Changes.md#PATH_Tools for more information.", base)
 		}
 	}
 
